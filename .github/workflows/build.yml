@@ -19,6 +19,8 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Copy index.html to 404.html
+      run: cp wwwroot/index.html wwwroot/404.html
     - name: change basetag
       run: sed -i 's|<base href="/" />|<base href="/minswep/" />|g' wwwroot/index.html
     - name: Publish
