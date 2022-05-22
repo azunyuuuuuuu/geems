@@ -1,11 +1,12 @@
-@page "/game"
+﻿@page "/game"
 
 @inject NavigationManager _nav
 
 <PageTitle>minswep</PageTitle>
 
 <div class="flex gap-2 items-baseline p-2 mx-10">
-    <a class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500">Reset</a>
+    <a class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500" disabled>Reset</a>
+    <button class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500" @onclick=GenerateNewPlayfield>Generate</button>
 
     <span class="grow"></span>
     <span>@minecount / @Mines 💣</span>
@@ -23,10 +24,6 @@
 
     <div class="grid gap-1 mx-auto max-w-fit p-3 shadow bg-gray-100 rounded"
     style="grid-template-columns: repeat(@Width, minmax(0, 1fr));">
-        @{
-
-            var i = 0;
-        }
         @for (int row = 0; row < Height; row++)
         {
             @for (int column = 0; column < Width; column++)

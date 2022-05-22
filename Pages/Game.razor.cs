@@ -13,7 +13,7 @@ public partial class Game
     [Parameter, SupplyParameterFromQuery(Name = "mines")]
     public int Mines { get; set; }
 
-    private bool[,]? playfield;
+    private bool[,] playfield = new bool[9, 9];
 
     private readonly Dictionary<string, string> gamemodes = new Dictionary<string, string>();
 
@@ -31,22 +31,19 @@ public partial class Game
 
     protected override void OnParametersSet()
     {
-        Width = Width <= 0 ? 9 : Width;
-        Height = Height <= 0 ? 9 : Height;
-        Mines = Mines <= 0 ? 9 : Mines;
+        Width = Math.Clamp(Width, 3, 100);
+        Height = Math.Clamp(Height, 3, 100);
+        Mines = Math.Clamp(Mines, 1, (Width * Height) - 1);
 
         playfield = new bool[Width, Height];
     }
 
     private void ToggleMine(int x, int y)
     {
-        Console.WriteLine($"{x}, {y}, {playfield.ToString()}, {playfield.Length}");
-
         if ((x >= 0 && x < Width) == false) return;
         if ((y >= 0 && y < Height) == false) return;
 
         playfield[x, y] = !playfield[x, y];
-        Console.WriteLine($"eyy {minecount.ToString()}");
     }
 
     private int? GetNeighbouringMineCount(int x, int y)
@@ -63,5 +60,19 @@ public partial class Game
                         count += 1;
 
         return count > 0 ? count : null;
+    }
+
+    private void GenerateNewPlayfield()
+    {
+        playfield = new bool[Width, Height];
+        var random = new Random();
+
+        do
+        {
+            var x = random.Next(0, Width);
+            var y = random.Next(0, Height);
+
+            playfield[x, y] = true;
+        } while (minecount < Mines);
     }
 }
