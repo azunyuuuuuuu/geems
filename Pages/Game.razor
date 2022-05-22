@@ -27,20 +27,20 @@
 
             var i = 0;
         }
-        @for (int x = 0; x < Width; x++)
+        @for (int row = 0; row < Height; row++)
         {
-            @for (int y = 0; y < Height; y++)
+            @for (int column = 0; column < Width; column++)
             {
-                var fx = x;
-                var fy = y;
-                <button class="w-16 h-16 bg-red-100" @onclick="@(() => ToggleMine(fx, fy))">
-                    @if (playfield[x, y])
+                var fx = column;
+                var fy = row;
+                <button class="w-8 h-8 bg-red-100" @onclick="@(() => ToggleMine(fx, fy))">
+                    @if (playfield[column, row])
                     {
-                        <span>💣</span>
+                        <span> 💣 </span>
                     }
                     else
                     {
-                        <span>@(i++) <br /> @fx @fy <br /> @GetNeighbouringMineCount(fx,fy)</span>
+                        <span> @GetNeighbouringMineCount(fx,fy) </span>
                     }
                 </button>
             }

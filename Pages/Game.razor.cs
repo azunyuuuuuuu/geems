@@ -49,22 +49,19 @@ public partial class Game
         Console.WriteLine($"eyy {minecount.ToString()}");
     }
 
-    private string? GetNeighbouringMineCount(int x, int y)
+    private int? GetNeighbouringMineCount(int x, int y)
     {
-        return $"{x} {y}";
         var count = 0;
-        // for (var fx = x - 1; fx <= x + 1; fx++)
+        for (var fx = x - 1; fx <= x + 1; fx++)
 
-        //     for (var fy = y - 1; fy <= y + 1; fy++)
+            for (var fy = y - 1; fy <= y + 1; fy++)
 
-        //         if ((fx >= 0 && fx < Width) && (fy >= 0 && fy < Height))
+                if ((fx >= 0 && fx < Width) && (fy >= 0 && fy < Height))
 
-        //             if (playfield[fx, fy])
+                    if (playfield[fx, fy])
 
-        //                 count += 1;
+                        count += 1;
 
-        count = x;
-
-        // return count > 0 ? count : null;
+        return count > 0 ? count : null;
     }
 }
