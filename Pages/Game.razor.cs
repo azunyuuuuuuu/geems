@@ -17,6 +17,8 @@ public partial class Game
 
     private readonly Dictionary<string, string> gamemodes = new Dictionary<string, string>();
 
+    private int minecount => playfield?.Cast<bool>().Where(x => x == true).Count() ?? 0;
+
     protected override void OnInitialized()
     {
         var modeeasy = new Dictionary<string, object?>() { { "width", 9 }, { "height", 9 }, { "mines", 10 } };
@@ -34,5 +36,35 @@ public partial class Game
         Mines = Mines <= 0 ? 9 : Mines;
 
         playfield = new bool[Width, Height];
+    }
+
+    private void ToggleMine(int x, int y)
+    {
+        Console.WriteLine($"{x}, {y}, {playfield.ToString()}, {playfield.Length}");
+
+        if ((x >= 0 && x < Width) == false) return;
+        if ((y >= 0 && y < Height) == false) return;
+
+        playfield[x, y] = !playfield[x, y];
+        Console.WriteLine($"eyy {minecount.ToString()}");
+    }
+
+    private string? GetNeighbouringMineCount(int x, int y)
+    {
+        return $"{x} {y}";
+        var count = 0;
+        // for (var fx = x - 1; fx <= x + 1; fx++)
+
+        //     for (var fy = y - 1; fy <= y + 1; fy++)
+
+        //         if ((fx >= 0 && fx < Width) && (fy >= 0 && fy < Height))
+
+        //             if (playfield[fx, fy])
+
+        //                 count += 1;
+
+        count = x;
+
+        // return count > 0 ? count : null;
     }
 }
