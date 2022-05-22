@@ -1,0 +1,36 @@
+﻿@page "/game"
+
+@inject NavigationManager _nav
+
+<PageTitle>minswep</PageTitle>
+
+<div class="flex gap-2 items-baseline">
+    <a class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500">Reset</a>
+
+    <span class="grow"></span>
+    <span>@Mines 💣</span>
+    <span>Timer ⏱️</span>
+    <span class="grow"></span>
+
+    @foreach (var item in gamemodes)
+    {
+        <a class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500" href="@item.Value">@item.Key</a>
+    }
+</div>
+
+@if (playfield != null)
+{
+
+    <div class="grid gap-1 mx-auto max-w-fit p-3 shadow bg-gray-100 rounded"
+    style="grid-template-columns: repeat(@Width, minmax(0, 1fr)); grid-template-rows: repeat(@Height, minmax(0, 1fr));">
+        @for (int x = 0; x < Width; x++)
+        {
+            @for (int y = 0; y < Height; y++)
+            {
+                <button class="w-8 h-8 bg-red-100" disabled></button>
+            }
+        }
+    </div>
+}
+
+✅☑️✔️❎🔳🔲
