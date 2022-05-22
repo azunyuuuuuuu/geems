@@ -25,7 +25,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-zK9Cw7BNHKOPF1V9s9KY1DB0DmK5hg\/b3O1epCjhEUU=",
+      "hash": "sha256-1A2G1eFX1ohiMmrsjM15Of9im8XUdQI9bdxYpX6WwPY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -85,7 +85,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-FXqZFn3+z9EsWNnl5v96HsBugBfO7Z9wGiIUtk\/ASU4=",
+      "hash": "sha256-AmFZwHA2uN2neH73E7aYPFXDylp6xuCLd5mpbcKj3DQ=",
       "url": "_framework\/minswep.dll"
     },
     {
@@ -117,7 +117,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-ghIL6eLE7tKAJ1oYeltPER14Ss0XJ0SEr4FkEFp\/Rhs=",
+      "hash": "sha256-M0CVWUEZ7F9YjcBYZKbXvxsN9nHsJPfJJeLEWw5oX5k=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-vbkomSdv0\/ckBUVEzYOQ5wPk0fsp1QQtAadktTFQCoc=",
+      "hash": "sha256-RCSfumk2dU8w3xIjBQolHLgA8Jlb5i9X+rmvl2QaThM=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -145,15 +145,15 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-4ZTMkg3yKcdMDoJd8vlQydphfJ+N4JnTkvsQloJYOa8=",
+      "hash": "sha256-4TIDPT5ESDI9GLmFZq3SFfrX9i+7XoPxZF25UAJC3B0=",
       "url": "_framework\/dotnet.6.0.5.u8jaacjnbq.js"
     },
     {
-      "hash": "sha256-IVPfjnZpYKWqQZWh\/Amzytgujtf6bUwFXm6agChYM7U=",
+      "hash": "sha256-AUwJndIIiPPYXY\/nIda8plZINf92BtKrXrraVbfsDOc=",
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-I6H6eF8s9JcDnbEju9l\/mbe+d2D3bi4GSsb\/Cs3WHFY=",
+      "hash": "sha256-IeBiNuCCOUzkvKINpYeT58iaupMi7r9cHsGuUbpxFuw=",
       "url": "404.html"
     },
     {
@@ -173,7 +173,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-gCWmypaf2rmFTbS99k3y9veHtErQuaYwsBce3gBzKrM=",
+      "hash": "sha256-apGfSk1qhip25O\/\/a95gasFMm9iueRNxTF9gRih4oZo=",
       "url": "index.html"
     },
     {
@@ -181,5 +181,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "RWTQz5lr"
+  "version": "RGM5prY9"
 };
