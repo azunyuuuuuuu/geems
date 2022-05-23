@@ -14,10 +14,10 @@
             module = await JS.InvokeAsync<IJSObjectReference>("import", "./Shared/DarkToggle.razor.js");
     }
 
-    private async ValueTask<string?> SetDarkMode() => module is not null ? await
-    module.InvokeAsync<string>("themeSetDarkMode") : null;
-    private async ValueTask<string?> SetLightMode() => module is not null ? await
-    module.InvokeAsync<string>("themeSetLightMode") : null;
-    private async ValueTask<string?> SetOsMode() => module is not null ? await module.InvokeAsync<string>("themeSetOsMode")
-    : null;
+    private async ValueTask<string?> SetDarkMode()
+    => module is not null ? await module.InvokeAsync<string>("themeSetDarkMode") : null;
+    private async ValueTask<string?> SetLightMode()
+    => module is not null ? await module.InvokeAsync<string>("themeSetLightMode") : null;
+    private async ValueTask<string?> SetOsMode()
+    => module is not null ? await module.InvokeAsync<string>("themeSetOsMode") : null;
 }
