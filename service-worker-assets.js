@@ -25,11 +25,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-1A2G1eFX1ohiMmrsjM15Of9im8XUdQI9bdxYpX6WwPY=",
+      "hash": "sha256-wofeMere8SOOjTswOvttKz18332SvAueNOuLhldkcY0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-Z4MypoWYORgo8Fd+p5jTAKOPXDvIr9szxXCyrWlqD2U=",
+      "hash": "sha256-g5UjUyR46yu9ep2WkgdScvPdrX6qeLwkcVkDqS1NciI=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -77,7 +77,7 @@
       "url": "_framework\/Microsoft.Extensions.Primitives.dll"
     },
     {
-      "hash": "sha256-Wbua5MP49m9CS7ZtolRGwwtHaoMrYOFYBZ4KphZ9C0w=",
+      "hash": "sha256-VfJp902vGMfskKze2BwgJORnB33gPvXGk9jnj493ysA=",
       "url": "_framework\/Microsoft.JSInterop.dll"
     },
     {
@@ -85,7 +85,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-AmFZwHA2uN2neH73E7aYPFXDylp6xuCLd5mpbcKj3DQ=",
+      "hash": "sha256-iJoiInHDvMtzSbs+UAKomO0YgkoeYABy6FsLTZa975o=",
       "url": "_framework\/minswep.dll"
     },
     {
@@ -133,7 +133,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-RCSfumk2dU8w3xIjBQolHLgA8Jlb5i9X+rmvl2QaThM=",
+      "hash": "sha256-10UEM1MrweAXhP+MRvG\/AY4I5eZSoZyWlZTGn0yKzQ0=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -145,15 +145,19 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-4TIDPT5ESDI9GLmFZq3SFfrX9i+7XoPxZF25UAJC3B0=",
+      "hash": "sha256-LqFGXsE5ZK34ggvn\/n37dJ7DsTkFtdddZ083X8myc0k=",
       "url": "_framework\/dotnet.6.0.5.u8jaacjnbq.js"
     },
     {
-      "hash": "sha256-AUwJndIIiPPYXY\/nIda8plZINf92BtKrXrraVbfsDOc=",
+      "hash": "sha256-M9+LsfKQ4eoEeCN+9mTLK+UnUfQ5V3ae2JS8wNktJok=",
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-IeBiNuCCOUzkvKINpYeT58iaupMi7r9cHsGuUbpxFuw=",
+      "hash": "sha256-VX6dwKVfgsuxxHsGuuthxm3b2I+pv6\/uS24TjvJ+Do4=",
+      "url": "Shared\/DarkToggle.razor.js"
+    },
+    {
+      "hash": "sha256-pIaFYkIXO8RCngc68eFxX8fOxU8Ea3Z91TtF0BGZQfs=",
       "url": "404.html"
     },
     {
@@ -173,7 +177,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-apGfSk1qhip25O\/\/a95gasFMm9iueRNxTF9gRih4oZo=",
+      "hash": "sha256-HRwTxUSEkxGjL187Ih6DoaCke6DJh2RibDbWpZzUKK4=",
       "url": "index.html"
     },
     {
@@ -181,5 +185,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "RGM5prY9"
+  "version": "qdXB+2QG"
 };
