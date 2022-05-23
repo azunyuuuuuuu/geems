@@ -1,0 +1,23 @@
+@inject IJSRuntime JS
+
+<button @onclick="@(async ()=>await SetDarkMode())">🌞</button>
+<button @onclick="@(async ()=>await SetLightMode())">🌚</button>
+<button @onclick="@(async ()=>await SetOsMode())">??</button>
+
+
+@code {
+    private IJSObjectReference? module;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+            module = await JS.InvokeAsync<IJSObjectReference>("import", "./Shared/DarkToggle.razor.js");
+    }
+
+    private async ValueTask<string?> SetDarkMode() => module is not null ? await
+    module.InvokeAsync<string>("themeSetDarkMode") : null;
+    private async ValueTask<string?> SetLightMode() => module is not null ? await
+    module.InvokeAsync<string>("themeSetLightMode") : null;
+    private async ValueTask<string?> SetOsMode() => module is not null ? await module.InvokeAsync<string>("themeSetOsMode")
+    : null;
+}
