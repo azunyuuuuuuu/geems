@@ -33,7 +33,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-SbOy2kfIeISsq3IrFFdx5bKb3orUcILfBRmCz06PBfg=",
+      "hash": "sha256-pnmQuCCqpKO+JWwO1zWQLMUlkxJ+OggSfdu9SS2CVEE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-sMQBVz7PxGZOp411jK8ugfkwQ95Tz3ciD2nzItIS+LY=",
+      "hash": "sha256-8GkZLlsPbZKVbeTE7ExFGcGCjWh+STGnYg8novUEZ+Q=",
       "url": "_framework\/minswep.dll"
     },
     {
@@ -189,5 +189,5 @@
       "url": "service-worker-bootstrap.js"
     }
   ],
-  "version": "2zUbSGIB"
+  "version": "c6KkT6Rf"
 };
