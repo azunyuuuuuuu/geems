@@ -30,6 +30,8 @@ jobs:
     - name: change basetag
       run: sed -i 's|<base href="/" />|<base href="/minswep/" />|g' wwwroot/index.html
 
+    - name: Build
+      run: dotnet build
     - name: Publish
       run: dotnet publish --verbosity normal -c Release --output release
 
