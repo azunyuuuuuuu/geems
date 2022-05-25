@@ -27,3 +27,6 @@ function refreshState() {
         document.documentElement.classList.remove('dark')
     }
 }
+
+window.matchMedia("(prefers-color-scheme: dark)").addListener(e => e.matches && refreshState())
+window.matchMedia("(prefers-color-scheme: light)").addListener(e => e.matches && refreshState())
