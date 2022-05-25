@@ -33,7 +33,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-IWcrsfeFrMkmBK6wU7tVbhyr1RQkXu7HY0IDNU\/gztg=",
+      "hash": "sha256-v64RTDg+TegTR5x42soWtDCupqXdPXTetCEbeeho+3c=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-UK92wyWGiEAu3SjUkzSrmxOdpiVPEIqKitU6ntlUiJM=",
+      "hash": "sha256-TruZ6mxnWxl+LlWp01coFLNWxwRnAjkCxVtAao\/KTPI=",
       "url": "_framework\/minswep.dll"
     },
     {
@@ -153,7 +153,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-VX6dwKVfgsuxxHsGuuthxm3b2I+pv6\/uS24TjvJ+Do4=",
+      "hash": "sha256-Knmd1trGKk4jfw7yVWNRsaMaIDN1kJ9\/v\/9mal1NxS8=",
       "url": "Shared\/DarkToggle.razor.js"
     },
     {
@@ -189,5 +189,5 @@
       "url": "service-worker-bootstrap.js"
     }
   ],
-  "version": "lgIHtc8+"
+  "version": "BPUKeniX"
 };
