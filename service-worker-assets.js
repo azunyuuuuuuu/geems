@@ -33,7 +33,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-g+bL7R98peJjbGMvsfa1oNWgHtJBwZiwxp\/Ap6\/lD70=",
+      "hash": "sha256-Ot2g22fEBJQrLO7or4281bzAkqTmwnkSvlpDB1jghcU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-v22p25x\/XxGdvW\/pJ5ip1GfTtnMAjPfKiwxPZ+3NJSk=",
+      "hash": "sha256-rCa\/1ojpp8e+5txKLKWtsMDWVMrI1mslJg34\/hrhG1A=",
       "url": "_framework\/minswep.dll"
     },
     {
@@ -157,10 +157,6 @@
       "url": "Shared\/DarkToggle.razor.js"
     },
     {
-      "hash": "sha256-r2ce40faj710+brbUok9RBch0pRDFmWurOzHDQPtGx4=",
-      "url": "404.html"
-    },
-    {
       "hash": "sha256-VeptrZosCJ3mx2qjRXQM5FTpfj8QCKSGUocp7dNCxVg=",
       "url": "css\/app.css"
     },
@@ -177,7 +173,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-\/rJRnVIaQXxFvANRiloA6ucwa8Jf2NlmHJrcjVRrgPI=",
+      "hash": "sha256-r2ce40faj710+brbUok9RBch0pRDFmWurOzHDQPtGx4=",
       "url": "index.html"
     },
     {
@@ -189,5 +185,5 @@
       "url": "service-worker-bootstrap.js"
     }
   ],
-  "version": "jyKE91Q0"
+  "version": "jNTW6x6Z"
 };
