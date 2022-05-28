@@ -4,9 +4,10 @@
 
 <PageTitle>minswep</PageTitle>
 
-<div class="flex gap-2 items-baseline p-2 mx-10">
-    <a class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500" disabled>Reset</a>
-    <button class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500" @onclick=GenerateNewPlayfield>Generate</button>
+<div class="flex items-baseline gap-2 p-2 mx-10">
+    <a class="px-3 py-1 text-gray-100 rounded shadow bg-lime-600 hover:bg-lime-500" disabled>Reset</a>
+    <button class="px-3 py-1 text-gray-100 rounded shadow bg-lime-600 hover:bg-lime-500"
+        @onclick=GenerateNewPlayfield>Generate</button>
 
     <span class="grow"></span>
     <span>@minecount / @Mines 💣</span>
@@ -15,32 +16,36 @@
 
     @foreach (var item in gamemodes)
     {
-        <a class="shadow rounded px-3 py-1 bg-lime-600 text-gray-100 hover:bg-lime-500" href="@item.Value">@item.Key</a>
+        <a class="px-3 py-1 text-gray-100 rounded shadow bg-lime-600 hover:bg-lime-500" href="@item.Value">@item.Key</a>
     }
 </div>
 
 @if (playfield != null)
 {
+    <div class="w-full max-w-full flex justify-center overflow-x-auto p-1">
 
-    <div class="grid gap-1 mx-auto max-w-fit p-3 shadow bg-gray-100 dark:bg-gray-800 rounded outline outline-1 outline-black/5"
-    style="grid-template-columns: repeat(@Width, minmax(0, 1fr));">
-        @for (int row = 0; row < Height; row++)
-        {
-            @for (int column = 0; column < Width; column++)
+        <div class="grid max-w-fit gap-1 p-3 bg-gray-100 rounded shadow dark:bg-gray-800 outline outline-1 outline-black/5"
+        style="grid-template-columns: repeat(@Width, fit-content(4em));">
+            @for (int row = 0; row < Height; row++)
             {
-                var fx = column;
-                var fy = row;
-                <button class="w-8 h-8 rounded bg-gray-50 dark:bg-gray-700 transition-transform hover:scale-105 transform-gpu" @onclick="@(() => ToggleMine(fx, fy))">
-                    @if (playfield[column, row])
-                    {
-                        <span> 💣 </span>
-                    }
-                    else
-                    {
-                        <span> @GetNeighbouringMineCount(fx,fy) </span>
-                    }
-                </button>
+                @for (int column = 0; column < Width; column++)
+                {
+                    var fx = column;
+                    var fy = row;
+                    <button
+            class="w-8 h-8 transition-transform rounded min-h-fit min-w-fit bg-gray-50 dark:bg-gray-700 hover:scale-105 transform-gpu"
+            @onclick="@(() => ToggleMine(fx, fy))">
+                        @if (playfield[column, row])
+                        {
+                            <span> 💣 </span>
+                        }
+                        else
+                        {
+                            <span> @GetNeighbouringMineCount(fx,fy) </span>
+                        }
+                    </button>
+                }
             }
-        }
+        </div>
     </div>
 }
