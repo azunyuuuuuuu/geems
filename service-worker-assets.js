@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-H9ekdrSlCh0M3vwTP0bIztC6\/9i71iQskgt0BtiERDg=",
+      "hash": "sha256-gbvyeJaYGtRqU72RM7FkUR6qfL74TxbWD7EPII8MV8I=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-3w0fOr5kEgUAsA5xV+0R\/WtbfwNe6C6iV3Oic7+B0\/Q=",
+      "hash": "sha256-TjUGRGcNzIu1\/LKqSmEbKH8sPXXXgwDUfumvAGeEocg=",
       "url": "_framework\/geems.dll"
     },
     {
@@ -185,5 +185,5 @@
       "url": "service-worker-bootstrap.js"
     }
   ],
-  "version": "Rt+BNHZp"
+  "version": "R4e2QXch"
 };
