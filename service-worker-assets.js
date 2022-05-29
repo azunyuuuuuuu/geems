@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-Cqa\/lWtjhqvC6nRPw4hSMd875Oqt6Lyz\/I0yqXalWoY=",
+      "hash": "sha256-fgov7ZjNR332rjMLnXHi\/M4ESD4V5xx2YkDyqp3Wa2k=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-w4ygpYTF4eyZmFomKzWDg5m4LykU8hBveCDSBllDfug=",
+      "hash": "sha256-RT1VNc1gW767dwn\/vhx8YL+qBrUHofzD8XkCYB9itq4=",
       "url": "_framework\/geems.dll"
     },
     {
@@ -177,7 +177,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-CFSfY82Wfb0xjPKNTS5aDRdPjwUxVem\/wVwkLAxvRik=",
+      "hash": "sha256-6C040RP+Qmp1KQX7TNpCIZKXglDWyklLWf9fLyKJxEY=",
       "url": "manifest.json"
     },
     {
@@ -185,5 +185,5 @@
       "url": "service-worker-bootstrap.js"
     }
   ],
-  "version": "CTJjd1Hb"
+  "version": "XOv1ITWr"
 };
