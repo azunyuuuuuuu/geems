@@ -1,6 +1,6 @@
 {
-  "name": "minswep",
-  "short_name": "minswep",
+  "name": "geems",
+  "short_name": "geems",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
