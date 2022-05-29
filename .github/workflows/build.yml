@@ -30,7 +30,7 @@ jobs:
       run: dotnet publish --verbosity normal -c Release --output release --nologo
 
     - name: Change base-tag in index.html
-      run: sed -i 's|<base href="/" />|<base href="/minswep/" />|g' release/wwwroot/index.html
+      run: sed -i 's|<base href="/" />|<base href="/geems/" />|g' release/wwwroot/index.html
 
     - name: Fix service-worker-assets.js hashes
       working-directory: release/wwwroot

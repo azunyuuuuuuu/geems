@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Components;
 
-namespace minswep.Pages;
+namespace geems.Pages;
 
-public partial class Game
+public partial class minswep
 {
     [Parameter, SupplyParameterFromQuery(Name = "width")]
     public int Width { get; set; }
