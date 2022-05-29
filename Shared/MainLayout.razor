@@ -1,10 +1,13 @@
 ﻿@inherits LayoutComponentBase
-<DarkToggle />
 
-@Body
+<div class="flex absolute inset-0">
 
-<div class="text-center mx-auto my-8 text-neutral-400 text-xs">
-    @ThisAssembly.AssemblyName - @ThisAssembly.AssemblyFileVersion
+    <NavMenu></NavMenu>
+
+    <div class="grow overflow-auto h-full w-full">
+        @Body
+    </div>
+
 </div>
 
 <UpdateAvailableNotifier />
