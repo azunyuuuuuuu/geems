@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace geems.Pages;
 
-public partial class minswep
+public partial class Minswep
 {
     [Parameter, SupplyParameterFromQuery(Name = "width")]
     public int Width { get; set; }
