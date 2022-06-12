@@ -4,4 +4,12 @@
 
 <PageTitle>2048</PageTitle>
 
-<span>start ~</span>
+<div class="w-full max-w-full flex justify-center overflow-x-auto p-1">
+    <div
+        class="grid grid-cols-4 grid-rows-4 max-w-fit gap-1 p-3 bg-neutral-100 rounded shadow dark:bg-neutral-800 outline outline-1 outline-black/5">
+        @for (int i = 0; i < 4 * 4; i++)
+        {
+            <span class="inline-block h-8 w-8 bg-neutral-200 text-center align-middle leading-8 overflow-hidden">@(Math.Pow(2, i+1))</span>
+        }
+    </div>
+</div>
