@@ -13,7 +13,7 @@
         class="grid grid-cols-4 grid-rows-4 max-w-fit gap-1 p-3 bg-neutral-100 rounded shadow dark:bg-neutral-800 outline outline-1 outline-black/5">
         @for (int i = 0; i < 4 * 4; i++)
         {
-            <span class="inline-block h-8 w-8 bg-neutral-200 text-center align-middle leading-8 overflow-hidden">@(Math.Pow(2, i+1))</span>
+            <span class="inline-block h-8 w-8 bg-neutral-200 dark:bg-neutral-700 text-center align-middle leading-8 overflow-hidden">@(Math.Pow(2, i+1))</span>
         }
     </div>
     <div class="grow"></div>

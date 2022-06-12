@@ -11,8 +11,10 @@ public partial class TwoZeroFourEight
         => Console.WriteLine($"{nameof(KeyDownEventHandler)}: {GetLogString(e)}");
 
     private void KeyUpEventHandler(KeyboardEventArgs e)
-        => Console.WriteLine($"{nameof(KeyUpEventHandler)}: {GetLogString(e)}");
-        
+    { return; }
+    // => Console.WriteLine($"{nameof(KeyUpEventHandler)}: {GetLogString(e)}");
+    // => Console.WriteLine($"{nameof(KeyUpEventHandler)}: {GetLogString(e)}");
+
     private void KeyPressEventHandler(KeyboardEventArgs e)
         => Console.WriteLine($"{nameof(KeyPressEventHandler)}: {GetLogString(e)}");
 
