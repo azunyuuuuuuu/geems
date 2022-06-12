@@ -1,16 +1,22 @@
-﻿<button class="absolute px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 block md:hidden" @onclick="() => menucontainer.FocusAsync()">
+﻿<button class="absolute px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 block md:hidden"
+    @onclick="() => menucontainer.FocusAsync()">
     menu
 </button>
 
-<nav class="absolute h-full pb-3 bg-neutral-200 dark:bg-neutral-900 md:shadow-none flex flex-col w-64 gap-1 overflow-y-auto focus-within:translate-x-0 -translate-x-full md:relative md:translate-x-0 shadow-lg transition-transform shrink-0"
+<nav class="absolute h-full pb-3 bg-neutral-200 dark:bg-neutral-900  flex flex-col w-64 gap-1 overflow-y-auto focus-within:translate-x-0 -translate-x-full md:relative md:translate-x-0 shadow-lg outline outline-1 outline-black/5 md:shadow-none md:outline-none transition-transform shrink-0"
     @ref="menucontainer" tabindex="-1">
     <div class="p-3 space-y-1 text-right">
         <span class="block font-bold text-xl tracking-wide"> @ThisAssembly.AssemblyName </span>
-        <span class="block font-thin text-sm tracking-tight text-neutral-400 dark:text-neutral-600"> @ThisAssembly.AssemblyFileVersion </span>
+        <span class="block font-thin text-sm tracking-tight text-neutral-400 dark:text-neutral-600">
+            @ThisAssembly.AssemblyFileVersion </span>
     </div>
 
-    <NavLink class="px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800" ActiveClass="bg-neutral-100 dark:bg-neutral-800" href="./" Match="NavLinkMatch.All">home</NavLink>
-    <NavLink class="px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800" ActiveClass="bg-neutral-100 dark:bg-neutral-800" href="./minswep">minswep</NavLink>
+    <NavLink class="px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+        ActiveClass="bg-neutral-100 dark:bg-neutral-800" href="./" Match="NavLinkMatch.All">home</NavLink>
+    <NavLink class="px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+        ActiveClass="bg-neutral-100 dark:bg-neutral-800" href="./minswep">minswep</NavLink>
+    <NavLink class="px-3 py-1 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+        ActiveClass="bg-neutral-100 dark:bg-neutral-800" href="./2048">2048</NavLink>
 
     <span class="grow"></span>
 
